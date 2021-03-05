@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+/*NAVBAR*/
+
+.navbar {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.oasis {
+    color: #fff;
+    font-size: 72px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.buddha {
+    height: 75px;
+    width: 75px;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+}
+
+footer span {
+    color: #fff;
+}
+
+/* DISPLAY */
+
+.meditate {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.time-selection, .scenary, .player {
+    height: 80%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*BUTTON DROPDOWN*/
+
+.time-options, .scenary-options {
+    display: none;
+}
+
+.timing-text, .background-text {
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0 25px;
+}
+
+.player {
+    position: relative;
+}
+
+.player svg {
+    position: absolute;
+    height: 65%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    pointer-events: none;
+}
+
+.play {
+    height: 20vh;
+    width: 20vw;
+    padding-left: 3%;
+}
+
+.countdown {
+    position: absolute;
+    bottom: 10%;
+    color: #fff;
+    font-size: 64px;
+    font-family: 'Bungee Shade', cursive;
+}
+
+/* BUTTONS */
+
+.time-selection button, .scenary button {
+    color: #fff;
+    /* width: 100%;
+    height: 100%; */
+    background: none;
+    border: 2px solid #fff;
+    cursor: pointer;
+    border-radius: 25%;
+    font-size: 22px;
+    transition: all .5s ease;
+    padding: 10px 15px;
+}
+
+.time-options {
+    margin-top: 50px;
+}
+
+.time-options ul li {
+    margin-bottom: 70px;
+}
+
+.time-options .buttonTime {
+    padding: 30px 20px;
+}
+
+
+
+.time-selection button:hover {
+    background: linear-gradient(#EFBAD3, rgba(161, 99, 245, 1));
+}
+
+.scenary button:hover {
+    border: none;
+}
+
+.time-selection .time-logo button, .scenary .scenary-selection button {
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 25%;
+    margin-top: 20px;
+}
+
+.time-selection, .scenary {
+    justify-content: flex-start;
+    align-self: start;
+}
+
+.time-logo, .scenary-selection {
+    margin-top: 30px;
+}
+
+
+/* VIDEO */
+video {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: -100;
+}
+
+
+/* SCENARIES*/
+
+.scenario {
+    height: 6vh;
+    width: 6vw;
+}

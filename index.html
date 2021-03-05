@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Oasis Meditation</title>
+        <link rel="shortcut icon" type="image/svg" href="svg/005-buddha.svg">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+    </head>
+    <body>
+        <nav class="navbar"><span class="oasis">O</span><img class="buddha" src="svg/005-buddha.svg" alt="Oasis-Logo"><span class="oasis">SIS</span></nav>
+
+        <div class="meditate">
+
+            <div class="background-video"><video preload="auto" loop><source class="source" src="" /></video></div>
+
+            <div class="time-selection">
+
+                <div class="time-logo">
+                    <h3 class="timing-text">Step 1: Select a time frame</h3>
+                    <button><img class="scenario" id="Timing" src="svg/015-sand-clock.svg" alt="Time Selection"></button>
+                </div>
+                <div class="time-options">
+                <ul>
+                    <li><button class="buttonTime" data-time="10">5 Minutes</button></li>
+                    <li><button class="buttonTime" data-time="600">10 Minutes</button></li>
+                    <li><button class="buttonTime" data-time="900">15 Minutes</button></li>
+                    <li><button class="buttonTime" data-time="1200">20 Minutes</button></li>
+            </ul>
+        </div>
+            </div>
+
+
+            <div class="player">
+                <audio class="track">
+                    <source src="" />
+                </audio>
+                <!-- <h3 class="player-text">Step 3: Press Play & Enjoy!</h3> -->
+                <img src="svg/001-play.svg" class="play" alt="Play Button">
+                <svg class="track-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20"/>
+                    </svg>
+                <svg class="moving-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
+                    </svg>
+                <h3 class="countdown">0:00</h3>
+            </div>
+
+
+            <div class="scenary">
+
+                <div class="scenary-selection">
+                    <h3 class="background-text">Step 2: Select a scenary</h3>
+                    <button><img class="scenario" id="Background" src="svg/006-bank.svg" alt="Scenary Selection"></button>
+                </div>
+                <ul>
+                <div class="scenary-options">
+                <li><button id="Beach" data-video="video/Beach.mp4"><img class="scenario" src="svg/003-oasis.svg" alt="Beach"></button></li>
+                <li><button id="Camping" data-video="video/Camping.mp4"><img class="scenario" src="svg/014-tent.svg" alt="Camping"></button></li>
+                <li><button id="Campfire" data-video="video/Campfire.mp4"><img class="scenario" src="svg/007-campfire.svg" alt="Campfire"></button></li>
+                <li><button id="Thunderstorm" data-video="video/Thunderstorm.mp4"><img class="scenario" src="svg/008-storm.svg" alt="Thunderstorm"></button></li>
+
+                <li><button id="Desert" data-video="video/Desert.mp4"><img class="scenario" src="svg/010-drought.svg" alt="Desert"></button></li>
+                <li><button id="Drive" data-video="video/Drive.mp4"><img class="scenario" src="svg/013-car.svg" alt="Drive"></button></li>
+                <li><button id="Coffee" data-video="video/Coffee.mp4"><img class="scenario" src="svg/012-tea.svg" alt="Coffee"></button></li>
+                <li><button id="Library" data-video="video/Library.mp4"><img class="scenario" src="svg/011-shelf.svg" alt="Library"></button></li>
+            </ul>
+            </div>
+            </div>
+        </div>
+        
+        <footer><span>Designed & Developed by Nicol Lluesa &copy; All rights reserved</span></footer>
+        
+        <script src="app.js"></script>
+    </body>
+</html>
