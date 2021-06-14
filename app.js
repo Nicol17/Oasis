@@ -4,7 +4,6 @@ const Timing = document.querySelector('#Timing');
 
 Timing.addEventListener('click', () => {
     visibility();
-    removeText();
 });
     
     function visibility() {
@@ -23,12 +22,12 @@ Timing.addEventListener('click', () => {
 
 // SCENARY DROP-DOWN MENU
 
-const background = document.querySelector('#Background');
+const Background = document.querySelector('#Background');
 
 Background.addEventListener('click', () => {
     visibility2();
-    removeText2();
 });
+
     
     function visibility2() {
         var ScenaryOptions = document.querySelector('.scenary-options');
@@ -44,6 +43,15 @@ Background.addEventListener('click', () => {
         BackgroundText.style.display = 'none';
     } 
 
+    function removeAllText() {
+        removeText();
+        removeText2();
+    }
+
+    function RemoveAllVisibility() {
+        visibility();
+        visibility2();
+    }
 
 
 const meditate = () => {
@@ -71,7 +79,6 @@ const meditate = () => {
     // play
     play.addEventListener('click', () => {
         checkIfPlaying(video);
-        removeNavbar();
     });
 
     timeSelection.forEach(option => {
@@ -129,8 +136,9 @@ const meditate = () => {
         if(currentTime >= testDuration) {
             track.src = 'audio/19547__tobi123__klangschale-weich-ff.wav';
             track.play();
+            video.currentTime = 0;
             video.pause();
-            // video.currentTime = 0;
+            
             play.src = 'svg/001-play.svg';
         }
     }
@@ -152,15 +160,18 @@ const Librarybutton = document.querySelector('#Library');
 Beachbutton.addEventListener('click', () => {
     video.src = 'https://oasis-media-audio.s3-us-west-2.amazonaws.com/video/Beach.mp4';
     video.play();
-    if (video.paused) {
+        removeAllText();
+        RemoveAllVisibility();
         removeNavbar();
-    }
+
     play.src = 'svg/pause.svg'
 })
 
 Campingbutton.addEventListener('click', () => {
     video.src = 'https://oasis-media-audio.s3-us-west-2.amazonaws.com/video/Camping.mp4';
     video.play();
+    removeAllText();
+    RemoveAllVisibility();
     removeNavbar();
     play.src = 'svg/pause.svg'
 })
@@ -168,6 +179,8 @@ Campingbutton.addEventListener('click', () => {
 Bonfirebutton.addEventListener('click', () => {
     video.src = 'https://oasis-media-audio.s3-us-west-2.amazonaws.com/video/Campfire.mp4';
     video.play();
+    removeAllText();
+    RemoveAllVisibility();
     removeNavbar();
     play.src = 'svg/pause.svg'
 })
@@ -175,6 +188,8 @@ Bonfirebutton.addEventListener('click', () => {
 Thunderstormbutton.addEventListener('click', () => {
     video.src = 'https://oasis-media-audio.s3-us-west-2.amazonaws.com/video/Thunderstorm.mp4';
     video.play();
+    removeAllText();
+    RemoveAllVisibility();
     removeNavbar();
     play.src = 'svg/pause.svg'
 })
@@ -182,6 +197,8 @@ Thunderstormbutton.addEventListener('click', () => {
 Desertbutton.addEventListener('click', () => {
     video.src = 'https://oasis-media-audio.s3-us-west-2.amazonaws.com/video/Desert.mp4';
     video.play();
+    removeAllText();
+    RemoveAllVisibility();
     removeNavbar();
     play.src = 'svg/pause.svg'
 })
@@ -189,6 +206,8 @@ Desertbutton.addEventListener('click', () => {
 Drivebutton.addEventListener('click', () => {
     video.src = 'https://oasis-media-audio.s3-us-west-2.amazonaws.com/video/Drive.mp4';
     video.play();
+    removeAllText();
+    RemoveAllVisibility();
     removeNavbar();
     play.src = 'svg/pause.svg'
 })
@@ -196,6 +215,8 @@ Drivebutton.addEventListener('click', () => {
 Coffeebutton.addEventListener('click', () => {
     video.src = 'https://oasis-media-audio.s3-us-west-2.amazonaws.com/video/Coffee.mp4';
     video.play();
+    removeAllText();
+    RemoveAllVisibility();
     removeNavbar();
     play.src = 'svg/pause.svg'
 })
@@ -203,6 +224,8 @@ Coffeebutton.addEventListener('click', () => {
 Librarybutton.addEventListener('click', () => {
     video.src = 'https://oasis-media-audio.s3-us-west-2.amazonaws.com/video/Library.mp4';
     video.play();
+    removeAllText();
+    RemoveAllVisibility();
     removeNavbar();
     play.src = 'svg/pause.svg'
 })

@@ -92,7 +92,6 @@ footer span {
 .play {
     height: 20vh;
     width: 20vw;
-    padding-left: 3%;
 }
 
 .countdown {
@@ -172,4 +171,63 @@ video {
 .scenario {
     height: 6vh;
     width: 6vw;
+}
+
+footer span a {
+    color: #fff;
+    
+}
+
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 700px) {
+    .timing-text, .background-text {
+        display: none;
+    }
+
+    .player {
+        transform: scale(0.75);
+    }
+
+    video {
+        width: auto;
+        height: 100%;
+        margin-left: 50vw;
+        transform: translate(-50%);
+    }
+
+    .countdown {
+        bottom: 1%;
+    }
+
+    /* .meditate {
+        display: block;
+    }
+
+    .time-options {
+        display: inline-block;
+    } */
+
+    .time-selection button {
+        transform: scale(0.75);
+    }
+
+    .scenary button {
+        transform: scale(0.75);
+    }
+
+    .time-options ul li {
+        margin-bottom: 7px;
+    }
+
+
+    .time-options {
+        margin-top: 3px;
+    }
+    
+    .time-options .buttonTime {
+        padding: 2px 2px;
+    }
+
 }
