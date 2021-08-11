@@ -44,12 +44,12 @@ Background.addEventListener('click', () => {
     } 
 
     function removeAllText() {
-        removeText();
+        removeText(),
         removeText2();
     }
 
     function RemoveAllVisibility() {
-        visibility();
+        visibility(),
         visibility2();
     }
 

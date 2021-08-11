@@ -233,3 +233,9 @@ footer span a {
     }
 
 }
+
+@media screen and (min-width: 900px) and (max-width: 1390px) {
+    .countdown {
+        bottom: 1%;
+    }
+}
