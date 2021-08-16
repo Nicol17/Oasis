@@ -1,10 +1,9 @@
 // TIMING DROP-DOWN MENU
 
 const Timing = document.querySelector('#Timing');
+const TimingButton = document.querySelector('#TimingButton');
 
-Timing.addEventListener('click', () => {
-    visibility();
-});
+TimingButton.addEventListener('click', () => visibility());
     
     function visibility() {
         var TimeOptions = document.querySelector('.time-options');
@@ -20,13 +19,13 @@ Timing.addEventListener('click', () => {
         TimingText.style.display = 'none';
     } 
 
+
 // SCENARY DROP-DOWN MENU
 
 const Background = document.querySelector('#Background');
+const BackgroundButton = document.querySelector('#BackgroundButton');
 
-Background.addEventListener('click', () => {
-    visibility2();
-});
+BackgroundButton.addEventListener('click', () => visibility2());
 
     
     function visibility2() {
@@ -43,14 +42,16 @@ Background.addEventListener('click', () => {
         BackgroundText.style.display = 'none';
     } 
 
-    function removeAllText() {
-        removeText(),
-        removeText2();
+    function closeAllVisibility () {
+        var TimeOptions = document.querySelector('.time-options');
+        var ScenaryOptions = document.querySelector('.scenary-options');
+        TimeOptions.style.display = 'none';
+        ScenaryOptions.style.display = 'none';
     }
 
-    function RemoveAllVisibility() {
-        visibility(),
-        visibility2();
+    function removeAllText () {
+        removeText();
+        removeText2();
     }
 
 
@@ -160,74 +161,65 @@ const Librarybutton = document.querySelector('#Library');
 Beachbutton.addEventListener('click', () => {
     video.src = 'https://oasis-media-audio.s3-us-west-2.amazonaws.com/video/Beach.mp4';
     video.play();
-        removeAllText();
-        RemoveAllVisibility();
-        removeNavbar();
-
-    play.src = 'svg/pause.svg'
+    play.src = 'svg/pause.svg';
+    closeAllVisibility();
+    removeAllText();
 })
 
 Campingbutton.addEventListener('click', () => {
     video.src = 'https://oasis-media-audio.s3-us-west-2.amazonaws.com/video/Camping.mp4';
     video.play();
+    play.src = 'svg/pause.svg';
+    closeAllVisibility();
     removeAllText();
-    RemoveAllVisibility();
-    removeNavbar();
-    play.src = 'svg/pause.svg'
 })
 
 Bonfirebutton.addEventListener('click', () => {
     video.src = 'https://oasis-media-audio.s3-us-west-2.amazonaws.com/video/Campfire.mp4';
     video.play();
+    play.src = 'svg/pause.svg';
+    closeAllVisibility();
     removeAllText();
-    RemoveAllVisibility();
-    removeNavbar();
-    play.src = 'svg/pause.svg'
 })
 
 Thunderstormbutton.addEventListener('click', () => {
     video.src = 'https://oasis-media-audio.s3-us-west-2.amazonaws.com/video/Thunderstorm.mp4';
     video.play();
+    play.src = 'svg/pause.svg';
+    closeAllVisibility();
     removeAllText();
-    RemoveAllVisibility();
-    removeNavbar();
-    play.src = 'svg/pause.svg'
 })
 
 Desertbutton.addEventListener('click', () => {
     video.src = 'https://oasis-media-audio.s3-us-west-2.amazonaws.com/video/Desert.mp4';
     video.play();
+    play.src = 'svg/pause.svg';
+    closeAllVisibility();
     removeAllText();
-    RemoveAllVisibility();
-    removeNavbar();
-    play.src = 'svg/pause.svg'
 })
 
 Drivebutton.addEventListener('click', () => {
     video.src = 'https://oasis-media-audio.s3-us-west-2.amazonaws.com/video/Drive.mp4';
     video.play();
+    play.src = 'svg/pause.svg';
+    closeAllVisibility();
     removeAllText();
-    RemoveAllVisibility();
-    removeNavbar();
-    play.src = 'svg/pause.svg'
 })
 
 Coffeebutton.addEventListener('click', () => {
     video.src = 'https://oasis-media-audio.s3-us-west-2.amazonaws.com/video/Coffee.mp4';
     video.play();
+    play.src = 'svg/pause.svg';
+    closeAllVisibility();
     removeAllText();
-    RemoveAllVisibility();
-    removeNavbar();
-    play.src = 'svg/pause.svg'
 })
 
 Librarybutton.addEventListener('click', () => {
     video.src = 'https://oasis-media-audio.s3-us-west-2.amazonaws.com/video/Library.mp4';
     video.play();
+    play.src = 'svg/pause.svg';
+    closeAllVisibility();
     removeAllText();
-    RemoveAllVisibility();
-    removeNavbar();
-    play.src = 'svg/pause.svg'
 })
 };
 
